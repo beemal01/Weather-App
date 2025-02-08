@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="2509882_BimalKandel_WeatherApp.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Container -->
+    <div class="container">
+        <div class="search-box">
+            <i class='bx bx-map' id="image"></i>
+            <input type="text" placeholder="Search Your Location" class="searchBar">
+            <button class="bx bx-search" id="btn"> </button>
+        </div>
+
+        <!-- Error -->
+        <div class="error">
+            <i class='bx bx-error-alt'></i>
+            <p>City not found. Please try again...</p>
+        </div>
+
+        <!-- Weather Details -->
+        <div class="weather">
+            <div class="weather-details">
+                <img src=""  class="weather-img">
+                <h2 class="date"></h2>
+                <h1 class="temp"></h1>
+                <h2 class="city"></h2>
+                <h3 class="weatherCondn"></h3>
+            </div>
+            
+            <!-- Climate Condition -->
+            <div class="climate">
+                <div class="column">
+                    <i class='bx bxs-thermometer bx-lg'></i>
+                    <div>
+                        <h2 class="colunm-a">Pressure</h2>
+                        <p class="pressure"></p>
+                    </div>
+                </div>
+                <div class="column">
+                    <i class='bx bx-tachometer bx-lg'></i>
+                    <div>
+                        <h2 class="colunm-a">Humidity</h2>
+                        <p class="humidity"></p>
+                    </div>
+                </div>
+                <div class="column">
+                    <i class='bx bxl-tailwind-css bx-lg'></i>
+                    <div>
+                        <h2 class="colunm-a">Wind</h2>
+                        <p class="wind"></p>
+                    </div>
+                </div>
+                <div class="column">
+                    <i class='bx bx-wind bx-lg'></i>
+                    <div>
+                        <h2 class="colunm-a">Wind Deg</h2>
+                        <p class="wind_Speed"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="2509882_BimalKandel_WeatherApp.js"></script>
+</body>
+
+</html>
