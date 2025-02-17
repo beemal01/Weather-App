@@ -45,7 +45,7 @@ $result = mysqli_query($conn, $selectAllData);
 
 if (mysqli_num_rows($result) == 0) {
     // Fetch new data from the OpenWeather API
-    $url = "https://api.openweathermap.org/data/2.5/weather?q=$cityName&appid=76bd2ba9d285a28d8a9b329dcd281532&units=metric";
+    $url = "https://api.openweathermap.org/data/2.5/weather?q=$cityName&appid={your_api_key}&units=metric";
     $response = @file_get_contents($url);
 
     if ($response === FALSE) {
